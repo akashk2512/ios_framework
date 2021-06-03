@@ -1,0 +1,11 @@
+framework module testLogger {
+  umbrella header "testLogger.h"
+
+  export *
+  module * { export * }
+}
+
+module testLogger.Swift {
+    header "testLogger-Swift.h"
+    requires objc
+}
