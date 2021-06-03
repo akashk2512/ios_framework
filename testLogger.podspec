@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-   spec.platform     = :ios, "10.0"
+  # spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -91,8 +91,16 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+spec.public_header_files = "testLogger.framework/Headers/*.h"
+    spec.source_files = "testLogger.framework/Headers/*.h"
+    spec.vendored_frameworks = "testLogger.framework"
+    spec.platform = :ios
+    spec.swift_version = "4.2"
+    spec.ios.deployment_target  = '12.0'
+
+  #spec.source_files= "Classes", "Classes/**/*.{h,m}"
+  #spec.exclude_files = "Classes/Exclude"
+  #spec.swift_version = "4.2"
    #spec.frameworks = 'UIKit', 'Foundation'
   # spec.public_header_files = "Classes/**/*.h"
 
