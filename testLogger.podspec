@@ -1,12 +1,12 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "testLogger"
-    spec.version      = "0.0.2"
+    spec.version      = "0.0.3"
     spec.summary      = "testLogger is a framework."
     spec.description  = <<-DESC
     testLogger is a swift framework which has a logger class and TestLogger func
                    DESC
-    spec.homepage     = "https://github.com/akashk2512"
+    spec.homepage     = "https://github.com/akashk2512/ios_framework"
     spec.license      = { :type => "MIT", :file => "LICENSE" }
     spec.author             = { "Akash" => "akashk2512@gmail.com" }
     spec.source       = { :git => "https://github.com/akashk2512/ios_framework.git", :tag => "#{spec.version}" }
